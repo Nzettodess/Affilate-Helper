@@ -42,6 +42,8 @@ jobs:
           google-chrome --version
           chromedriver --version
 
+      - name: Create logs directory
+        run: mkdir -p "Local Run/logs"
       - name: Run GitScraping.py
         run: python proxy_tools/GitScraping.py
 
