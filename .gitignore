@@ -1,0 +1,5 @@
+config/
+chromedriver-win64/
+hidemyname_cookies.pkl
+manual-proxies.txt
+.log
