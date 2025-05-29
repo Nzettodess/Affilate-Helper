@@ -33,7 +33,7 @@ logging.basicConfig(
 INPUT_DIR = "data/input"
 COOKIE_FILE = os.path.join(INPUT_DIR, "hidemyname_cookies.pkl")
 
-webshare_api_key = "20re8ri629n16nk718m1fj61q7busf95b043k0t0"
+webshare_api_key = "yourapikey" #you can use environment variable to setup as well
 webshare_base_url = f"https://proxy.webshare.io/api/v2/proxy/list/download/jrdtdufojdsasvlhuvrftmdnwskxbvgmouoculej/-/any/username/direct/-/"
 
 webshare_headers = {
@@ -75,9 +75,9 @@ def fetch_from_webshare():
     return proxies
             
 # === API Configuration ===
-proxy_pool_api_key = "d1c268ea5b2b89cd1a5a26936ef545fa"
+proxy_pool_api_key = "yourapikey"
 proxy_pool_api_url = "https://proxy-pool-api.onrender.com/get_proxy"
-proxy_titan_api_key = "7kYw6u1Af5QwUexaC7JHgsUUwQtkhsdMffdka7pU0Pg"
+proxy_titan_api_key = "yourapikey"
 
 api_params = {
     "country": "US",
@@ -276,13 +276,6 @@ def save_proxies(proxy_list):
 # === MAIN ===
 if __name__ == "__main__":
     all_proxies = set()
-
-    # all_proxies |= fetch_from_proxytitan()
-    # all_proxies |= fetch_from_api()
-    # all_proxies |= fetch_from_sources()
-    # all_proxies |= fetch_from_proxyscrape()
-    # all_proxies |= fetch_from_proxiware()
-    #all_proxies |= fetch_from_webshare()
     
     webshare_proxies = fetch_from_webshare()
     other_proxies = set()
