@@ -108,5 +108,7 @@ A: Yes, just paste them in data/input/proxies.txt.
 
 ## 💬 Contact
 Feel free to open an issue or PR if you'd like to contribute or ask questions.
+
+If you think it is helpful, you can support me by: 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K41GKPMK)
 
